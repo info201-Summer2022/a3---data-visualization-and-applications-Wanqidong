@@ -38,7 +38,7 @@ chart_1
 
 ### Variable comparison chart - scatter plot
 
-This scatter plot shows _the comparison of prison pop in GA between black and white over years_ from 1970 to 2018. The reason why I included this plot is that it shows the black prison pop is higher than white prison pop, which helpe me explain the influence between race and prison pop. And the reason that I chose GA is that the difference between black prison pop and white prison pop in this state is bigger, so it will be clearer to be visualized in the chart. 
+This scatter plot shows _the comparison of prison pop in GA between black and white over years_ from 1970 to 2018. And this chart is about that black prison pop and white prison pop change over years, which are 1970 - 2018. The reason why I included this plot is that it shows the black prison pop is higher than white prison pop, which helpe me explain the influence between race and prison pop. And the reason that I chose GA is that the difference between black prison pop and white prison pop in this state is bigger, so it will be clearer to be visualized in the chart. 
 
 ```{r, echo=FALSE}
 chart_2
