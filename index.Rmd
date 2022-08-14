@@ -29,7 +29,7 @@ summary_info$average_race_rate_df <- average_race_rate_df
 
 ### Trends over time chart - line chart
 
-This line chart shows _average value of different race prison pop over time_ from 1970 to 2018. And the reason I included this chart is because it can clearly shows the number of different race's prison pop, and it may help me explain the relationship between race and prison pop that I think the race will influence it, and there are more black people in prison. 
+This line chart shows _average value of different race prison pop over time_ from 1970 to 2018. And the reason I included this chart is because it can clearly shows the number of different race's prison pop and also shows the trend about different race prison pop's change over years, and it may help me explain the relationship between race and prison pop that I think the race will influence it, and there are more black people in prison. 
 
 ```{r, echo=FALSE}
 chart_1
