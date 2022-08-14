@@ -1,1 +1,54 @@
+---
+title: "A3 - Data Visualization and Applications"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+source("analysis.R")
+```
+
+
+## Introduction
+
+Nowadays, people are pay more attention to the prison system because of the unfair and the discrimination of different race. Therefore, the topic which I am interested in is **the relationship between the race and the number of prison pop.** In order to better understand and solve this problem, I cited [incarceration_trends](https://raw.githubusercontent.com/vera-institute/incarceration-trends/master/incarceration_trends.csv), which provided the information about the jail pop and the prison pop based on the region, gender and the race.  
+
+## Summary information
+
+In summary information, I would like to understand more about the relationship between the race and the number of prison pop. And for the variables, I chose the different race prison pop and its rate, and filter to form the new dataset. And for the values, I analyzed the variable and calculated 5 values to help solving the problem. The first value is the average value of different race prison pop across all the counties. The second value is the highest value of different race prison pop. And the third value is different race prison pop's change over years(1983-2016). The max is 2018 and the min is 1970, and the reason I chose 1983 to 2016 is that I cannot get meaningful value by choosing 1970-1982 and 2017-2018. And the fourth value is different race prison pop about different state from 1970 to 2018. And the fifth value is average value of different race prison pop rate across all the counties. And these can show that black prison pop is higher than others. 
+
+```{r, echo=FALSE}
+summary_info <- list()
+summary_info$average_race_df <- average_race_df
+summary_info$high_race_df <- high_race_df
+summary_info$change_year_df <- change_year_df
+summary_info$new_state_df <- new_state_df
+summary_info$average_race_rate_df <- average_race_rate_df
+```
+
+## Charts
+
+### Trends over time chart - line chart
+
+This line chart shows _average value of different race prison pop over time_ from 1970 to 2018. And the reason I included this chart is because it can clearly shows the number of different race's prison pop, and it may help me explain the relationship between race and prison pop that I think the race will influence it, and there are more black people in prison. 
+
+```{r, echo=FALSE}
+chart_1
+```
+
+
+### Variable comparison chart - scatter plot
+
+This scatter plot shows _the comparison of prison pop in GA between black and white over years_ from 1970 to 2018. The reason why I included this plot is that it shows the black prison pop is higher than white prison pop, which helpe me explain the influence between race and prison pop. And the reason that I chose GA is that the difference between black prison pop and white prison pop in this state is bigger, so it will be clearer to be visualized in the chart. 
+
+```{r, echo=FALSE}
+chart_2
+```
+
+### Chart_3 - map
+
+This map shows _the black prison pop of different states over years_  from 1970 to 2018. And the reason why I included this map is that I analyzed that black prison pop is higher than other race mostly based on summary information and other two chart, so I want to display the influence of black prison pop in different regions, and almost every region has color, and the region with the heaviest color are California and Texas. Therefore, maybe there is some issue of prison because of the race. 
+
+```{r, echo=FALSE}
+map
+```
 
